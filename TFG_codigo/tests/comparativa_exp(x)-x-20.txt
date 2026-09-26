@@ -1,0 +1,16 @@
+--- Comparativa de métodos para f(x) = exp(x)-x-20 ---
+
+\begin{tabular}{cccccc}
+\hline
+     Método     &  Val. Iniciales  &  Iteraciones  &      Raíz (x)      &     f(x) obtenido      &                 Converge                 \\
+\hline
+   Bisección    &    [0.1, 4.0]    &      50       & 3.1416333028010364 & -7.549516567451064e-15 &                    Sí                    \\
+ Newton-Raphson &      [0.5]       &      33       & 3.141633302801037  & -4.440892098500626e-16 &                    Sí                    \\
+    Secante     &     [-1, 1]      &       -       &         -          &           -            &                                          \\
+   Steffensen   &      [0.5]       &       -       &         -          &           -            & Error en interación 2: Denominador nulo. \\
+     Halley     &      [0.5]       &       6       & 3.141633302801037  & -4.440892098500626e-16 &                    Sí                    \\
+   Chebyshev    &      [0.5]       &       4       & -19.99999999793885 &          0.0           &                    Sí                    \\
+   Ostrowski    &      [0.5]       &      10       & 3.141633302801037  & -4.440892098500626e-16 &                    Sí                    \\
+    Jarratt     &      [0.5]       &      10       & 3.141633302801037  & -4.440892098500626e-16 &                    Sí                    \\
+\hline
+\end{tabular}

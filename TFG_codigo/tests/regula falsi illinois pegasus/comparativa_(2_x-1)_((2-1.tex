@@ -1,0 +1,28 @@
+\begin{table}[H]
+\centering
+
+\renewcommand{\arraystretch}{1.3} % altura entre filas
+\setlength{\tabcolsep}{12pt}      % espacio horizontal entre columnas
+
+\begin{tabular}{ccccc}
+\hline
+Método & Val. Iniciales & Iteraciones & Raíz $(\alpha)$ & $f(\alpha)$ \\
+\hline
+
+Newton-Raphson & 0.01      &  11 & 0.50000 & 0                    \\
+
+Secante        & 0.01, 1   &  18 & 0.50000 & 0                    \\
+
+Regula-Falsi   & [0.01, 1] & 100 & 0.56631 & $2.34182\times10^{-1}$ \\
+
+Illinois       & 0.01, 1   &  12 & 0.50000 & $4.44089\times10^{-16}$ \\
+
+Pegasus        & 0.01, 1   &  12 & 0.50000 & $-6.66134\times10^{-16}$ \\
+
+\hline
+\end{tabular}
+
+\caption{$f(x) = \frac{2 x - 1}{x}$}
+\end{table}
+
+

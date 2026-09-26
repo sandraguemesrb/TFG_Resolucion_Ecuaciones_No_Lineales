@@ -1,0 +1,34 @@
+\begin{table}[H]
+\centering
+
+\renewcommand{\arraystretch}{1.3} % altura entre filas
+\setlength{\tabcolsep}{12pt}      % espacio horizontal entre columnas
+
+\begin{tabular}{ccccc}
+\hline
+Método & Val. Iniciales & Iteraciones & Raíz $(x)$ & $y(x)$ obtenido \\
+\hline
+
+Bisección      & [-1.0, 1.0] &  - & -       & \text{Error: no ordering rel} \\
+
+Newton-Raphson & 1.0         & 50 & 0.00000 & $1.52408\times10^{-26}$ \\
+
+Secante        & 1.0, 2.0    & 50 & 0.00001 & $2.75366\times10^{-18}$ \\
+
+Steffensen     & 1.0         &  - & -       & \text{Error: Error en intera} \\
+
+Halley         & 1.0         & 34 & 0.00000 & $3.39519\times10^{-31}$ \\
+
+Chebyshev      & 1.0         & 40 & 0.00000 & $8.62175\times10^{-31}$ \\
+
+Ostrowski      & 1.0         & 28 & 0.00000 & $1.18212\times10^{-31}$ \\
+
+Jarratt        & 1.0         & 28 & 0.00000 & $1.25068\times10^{-31}$ \\
+
+\hline
+\end{tabular}
+
+\caption{$y(x) = x^{\frac{10}{3}}$}
+\end{table}
+
+

@@ -1,0 +1,16 @@
+--- Comparativa de métodos para f(x) = 12.45*(1-exp(-2*x))-4.9*x ---
+
+\begin{tabular}{cccccc}
+\hline
+     Método     &  Val. Iniciales  &  Iteraciones  &  Raíz (x)  &  f(x) obtenido  &  Converge  \\
+\hline
+   Bisección    &    [0.1, 4.0]    &      49       &  2.52452   &   8.80025e-15   &     Sí     \\
+ Newton-Raphson &      [1.5]       &       5       &  2.52452   &  -1.73472e-18   &     Sí     \\
+    Secante     &    [1.5, 1.8]    &       6       &  2.52452   &  -1.73472e-18   &     Sí     \\
+   Steffensen   &      [1.5]       &       5       &  2.52452   &   2.11636e-16   &     Sí     \\
+     Halley     &      [1.5]       &       5       &  2.52452   &  -1.73472e-18   &     Sí     \\
+   Chebyshev    &      [1.5]       &       5       &  2.52452   &  -1.73472e-18   &     Sí     \\
+   Ostrowski    &      [1.5]       &       4       &  2.52452   &  -1.73472e-18   &     Sí     \\
+    Jarratt     &      [1.5]       &       4       &  2.52452   &   2.11636e-16   &     Sí     \\
+\hline
+\end{tabular}

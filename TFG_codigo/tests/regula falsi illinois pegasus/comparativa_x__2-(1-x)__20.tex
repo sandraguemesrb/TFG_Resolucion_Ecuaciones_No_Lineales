@@ -1,0 +1,30 @@
+\begin{table}[H]
+\centering
+
+\renewcommand{\arraystretch}{1.3} % altura entre filas
+\setlength{\tabcolsep}{12pt}      % espacio horizontal entre columnas
+
+\begin{tabular}{ccccc}
+\hline
+Método & Val. Iniciales & Iteraciones & Raíz $(\alpha)$ & $f(\alpha)$ \\
+\hline
+
+Bisección      & [0, 1] &  30 & 0.16492 & $-4.40328\times10^{-10}$ \\
+
+Newton-Raphson & 0      &   8 & 0.16492 & $6.93889\times10^{-18}$ \\
+
+Secante        & 0, 1   &  10 & 0.16492 & $6.93889\times10^{-18}$ \\
+
+Regula-Falsi   & [0, 1] & 100 & 0.16492 & $6.16010\times10^{-9}$ \\
+
+Illinois       & 0, 1   &  10 & 0.16492 & $6.93889\times10^{-18}$ \\
+
+Pegasus        & 0, 1   &  10 & 0.16492 & $6.93889\times10^{-18}$ \\
+
+\hline
+\end{tabular}
+
+\caption{$f(x) = x^{2} - \left(1 - x\right)^{20}$}
+\end{table}
+
+

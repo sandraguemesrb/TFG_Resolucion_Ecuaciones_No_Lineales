@@ -1,0 +1,30 @@
+\begin{table}[H]
+\centering
+
+\renewcommand{\arraystretch}{1.3} % altura entre filas
+\setlength{\tabcolsep}{12pt}      % espacio horizontal entre columnas
+
+\begin{tabular}{ccccc}
+\hline
+Método & Val. Iniciales & Iteraciones & Raíz $(\alpha)$ & $f(\alpha)$ \\
+\hline
+
+Bisección      & [0, 1] & 32 & 0.13775 & $7.17230\times10^{-11}$ \\
+
+Newton-Raphson & 0      &  6 & 0.13775 & $-5.55112\times10^{-17}$ \\
+
+Secante        & 0, 1   &  - & -       & \text{Error: float division by ze} \\
+
+Regula-Falsi   & [0, 1] & 20 & 0.13775 & $3.29359\times10^{-10}$ \\
+
+Illinois       & 0, 1   &  9 & 0.13775 & $-8.55317\times10^{-11}$ \\
+
+Pegasus        & 0, 1   &  8 & 0.13775 & $-5.55112\times10^{-17}$ \\
+
+\hline
+\end{tabular}
+
+\caption{$f(x) = 2 x - \left(1 - 2 x\right)^{4}$}
+\end{table}
+
+

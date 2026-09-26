@@ -1,0 +1,17 @@
+--- Comparativa de métodos para f(x) = x**5 -8*x**4 + 24*x**3 - 34*x**2 + 23*x - 6 ---
+
+\begin{tabular}{cccccc}
+\hline
+      Método       &  Val. Iniciales  &  Iteraciones  &      Raíz (x)      &     f(x) obtenido      &                 Converge                  \\
+\hline
+     Bisección     &    [0.1, 4.0]    &      42       & 2.999999999999477  & -4.249045559845399e-12 &                    Sí                     \\
+  Newton-Raphson   &      [1.5]       &      25       & 1.0000135371092886 &          0.0           &                    Sí                     \\
+      Secante      &    [1.5, 2.5]    &       -       &         -          &           -            &          float division by zero           \\
+   Regula-Falsi    &    [0.1, 4.0]    &      200      & 0.8763924241618751 &  -0.00450634245500936  &                    No                     \\
+ Newton Modificado &      [1.5]       &       4       & 1.0000050624377725 & 7.105427357601002e-15  &                    Sí                     \\
+    Steffensen     &      [1.5]       &       -       &         -          &           -            & Error en interación 17: Denominador nulo. \\
+      Halley       &      [1.5]       &      19       & 0.9999891181450624 &          0.0           &                    Sí                     \\
+     Chebyshev     &      [1.5]       &      21       & 1.0000033242823299 &          0.0           &                    Sí                     \\
+     Ostrowski     &      [1.5]       &      35       & 2.999999999999996  & 8.526512829121202e-14  &                    Sí                     \\
+\hline
+\end{tabular}

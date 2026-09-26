@@ -1,0 +1,9 @@
+--- Comparativa de métodos para f(x) = x-5*(1-exp(-x)) ---
+
+|     Método     |  Val. Iniciales  |  Iteraciones  |  Raíz (x)  |  f(x) obtenido  |  Converge  |
+|:--------------:|:----------------:|:-------------:|:----------:|:---------------:|:----------:|
+| Newton-Raphson |       [10]       |       5       |  4.96511   |  -2.77556e-16   |     Sí     |
+|     Halley     |       [10]       |       4       |  4.96511   |  -2.77556e-16   |     Sí     |
+|   Chebyshev    |       [10]       |       4       |  4.96511   |  -2.77556e-16   |     Sí     |
+|   Ostrowski    |       [10]       |       3       |  4.96511   |  -2.77556e-16   |     Sí     |
+|   Bisección    |      [2, 5]      |      42       |  4.96511   |   2.78312e-13   |     Sí     |
