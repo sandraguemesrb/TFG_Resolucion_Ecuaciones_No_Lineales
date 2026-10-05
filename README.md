@@ -1,4 +1,4 @@
-# [Nombre del Proyecto / TFG]
+# [Resolución de ecuaciones no lineales / TFG]
 
 > **Trabajo de Fin de Grado** presentado en la Universidad Complutense de Madrid.
 > **Calificación:** 9
